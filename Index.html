@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[KIARA MITCHELLE] • Midnight Muse</title>
+  
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom, #fffacd, #87ceeb);
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+        padding: 60px 20px;
+      background-color: #add8e6;
+      color: #ffffff;
+      text-shadow: 1px 1px #555;
+      border-bottom: 2px solid #5c5c5c;
+    }
+
+    header h1 {
+      font-size: 60px;
+      margin: 0;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    .hobbies, .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .hobbies img, .gallery img {
+      width: 150px;
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #ffcc00;
+    }
+
+    .socials a, .btn {
+      margin: 10px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #000;
+      background: #ffeb3b;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .socials a:hover, .btn:hover {
+      background: #ffe066;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    footer {
+      background-color: #fff8dc;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 0 auto;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    button {
+      background-color: #ffeb3b;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ffe066;
+    }
+
+    article {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      background-color: #ffffffc9;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    article h3 {
+      margin-top: 0;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 40px;
+      }
+
+      .hobbies img, .gallery img {
+        width: 100px;
+      }
+    }
+    #music {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#music h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+#music p {
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+  </style>
+    <script>
+        function toggleBlog() {
+          var blogSection = document.getElementById("blog");
+          if (blogSection.style.display === "none") {
+            blogSection.style.display = "block";
+            window.scrollTo({ top: blogSection.offsetTop, behavior: 'smooth' });
+          } else {
+            blogSection.style.display = "none";
+          }
+        }
+    
+        function toggleMoreAbout() {
+          var moreAbout = document.getElementById("more-about");
+          if (moreAbout.style.display === "none") {
+            moreAbout.style.display = "block";
+            window.scrollTo({ top: moreAbout.offsetTop, behavior: 'smooth' });
+          } else {
+            moreAbout.style.display = "none";
+          }
+        }
+      </script>
+</head>
+<body>
+
+  <header>
+    <h1>☀️ Kiara ☁️</h1>
+    <p>Chasing dreams, colors & calm breezes</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I'm a soul that thrives on sunlight, good energy, and beautiful moments. ☀️ Whether it's capturing life through a lens, vibing to music, or soaking in nature — this space is where I let it all shine. Welcome to my happy corner of the internet, where positivity meets creativity!</p>
+    <button onclick="toggleMoreAbout()">🌈 More About Me</button>
+  </section>
+
+  <section id="more-about">
+    <h3>My Story</h3>
+    <p>I’ve always been someone who loves the small things — morning light through the window, favorite songs on repeat, deep convos, and a warm coffee in hand. I’ve grown through art, nature, and real connections. And this site? It’s just a digital diary of all that makes me smile 🌸</p>
+    <p>When I’m not online, you’ll probably find me chasing sunsets, writing in my journal, or laughing way too hard with friends. Life’s too short not to enjoy the vibes! 🌟</p>
+  </section>
+
+  <section class="hobbies">
+    <h2>Things I Love</h2>
+    <img src="Photography.jpg" alt="Photography">
+    <img src="Music.jpg" alt="Music">
+    <img src="Painting.jpg" alt="Art">
+    <img src="Nature.jpg" alt="Nature">
+    <img src="Bowling.jpg" alt="Balls">
+    <img src="Partying.jpg" alt="Party">
+    <img src="Notebook.jpg" alt="Diary and Coffee">
+    <img src="Guitar.jpg" alt="Guitar">
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h2>Gallery</h2>
+    <img src="Sunset.jpg" alt="Sunset">
+    <img src="Friends.jpg" alt="Friends">
+    <img src="Coffee.jpg" alt="Coffee Moments">
+    <img src="Flowers.jpg" alt="Flowers">
+    <img src="Money bouquet.jpg" alt="Money bouquet">
+    <img src="Iphone.jpg" alt="Phone">
+    <img src="Gallery.jpg" alt="Headphone and thread">
+    <img src="Deco.png" alt="Pink Decorations">
+    <img src="Nails.jpg" alt="Nails">
+    <img src="Date.jpg" alt="Two People">
+    <img src="Handbag.jpg" alt="Bag">
+    <img src="Room.jpg" alt="All White Room">
+    <img src="braids.jpg" alt="Black Braids">
+    <img src="Me.jpg" alt="A girl">
+    <img src="Medrive.jpg" alt="Steering">
+    <img src="Tattoo.jpg" alt="Back Tattoo">
+    <img src="Bracelet.jpg" alt="Bracelet">
+    <img src="Picnic.jpg" alt="Picnic">
+    <img src="Nature.jpg" alt="Nature">
+    <img src="Hp.jpg" alt="Decorated Room">
+    <img src="Yum.jpg" alt="Food">
+    <img src="Outfit.jpg" alt="Clothes">
+    <img src="Desert.jpg" alt="Food">
+    <img src="Us.jpg" alt="Boy and Girl">
+    <img src="Suitcases.jpg" alt="Suitcases">
+    <img src="Gift.jpg" alt="Pink Bag">
+    <img src="Handbag.jpg" alt="Red Bag">
+    <img src="hot.jpg" alt="A girl">
+    <img src="Real.jpg" alt="Coffee">
+    <img src="Package.jpg" alt="Purple Things">
+    <img src="Wallpaper.jpg" alt="Two People">
+  </section>
+
+  <section id="music">
+    <h2>🎧 My Vibe</h2>
+    <p>Here's something that sets the mood just right.</p>
+    <iframe style="border-radius:12px" 
+            src="https://open.spotify.com/embed/album/2A6IuWcopkXZfUl8bOt8dx?utm_source=generator" 
+            width="100%" 
+            height="352" 
+            frameBorder="0" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy"></iframe>
+  </section>
+  
+
+  <section class="socials">
+    <h2>Let’s Be Friends 💬</h2>
+    <a href="https://www.instagram.com/_yk_kiaraa?igsh=MWg5dzBnbzZidnNjYw==&utm_source=ig_contact_invite" target="_blank">Instagram</a>
+    <a href="https://www.tiktok.com/@ki3.?_t=ZM-8voFeTK4rHJ&_r=1" target="_blank">TikTok</a>
+  </section>
+
+  <div class="buttons">
+    <a class="btn" href="#contact">Contact Me</a>
+    <a class="btn" href="#gallery">Photo Moments</a>
+    <a class="btn" href="#blog">Blog</a>
+    <a class="btn" href="#music">🎶 Music Vibes</a>
+  </div>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/mldbeqzr" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section id="blog">
+    <h2>My Blog</h2>
+    <div class="blog-post">
+      <h3>✨ Finding Joy in the Little Things</h3>
+      <p>Sometimes, a quiet walk or a hot coffee at sunrise is all the therapy you need. I’m learning to celebrate the small wins and moments that often go unnoticed. Life feels softer this way ☕🌸</p>
+    </div>
+    <div class="blog-post">
+      <h3>🎨 Color Outside the Lines</h3>
+      <p>Art isn't always clean or perfect. Neither is life. That’s the magic of it all — creating, learning, getting messy and trying again. Just keep coloring your world 🌈</p>
+    </div>
+  </section>
+
+    <article>
+      <h3>🌅 Morning Skies & Peaceful Vibes</h3>
+      <p>Woke up to the most peaceful sunrise. It reminded me why I love mornings. The calm, the light breeze, and my favorite playlist on repeat — absolute peace. ✨</p>
+      <a href="#">Read more</a>
+    </article>
+
+    <article>
+      <h3>🎨 A Splash of Creativity</h3>
+      <p>This weekend I tried painting with pastels—so messy but so fun! I let go of perfection and just created whatever came to heart. It felt good.</p>
+      <a href="#">Read more</a>
+    </article>
+  </section>
+
+  <footer>
+    Made with ☀️ and 💙 by Kiara | 2025
+  </footer>
+  
+
+</body>
+</html>
+
